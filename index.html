@@ -145,9 +145,62 @@
         margin-bottom: 2rem;
       }
     }
+    #theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  color: #4f46e5;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.2rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  z-index: 1000;
+}
+
+#theme-toggle:hover {
+  background: #f3f4f6;
+}
+
+/* Thème sombre activé */
+body.dark {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f1f5f9;
+}
+
+body.dark .hero {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-color: #334155;
+}
+
+body.dark .project,
+body.dark .contact ul {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+body.dark footer {
+  color: #94a3b8;
+}
+
+body.dark a {
+  color: #93c5fd;
+}
+
+body.dark #theme-toggle {
+  background: #1e293b;
+  color: #fcd34d;
+}
+
   </style>
 </head>
 <body>
+<button id="theme-toggle" aria-label="Changer le thème">
+  🌙
+</button>
 
 <!-- Présentation -->
 <section class="hero fade-in">
@@ -206,6 +259,15 @@
 <footer>
   © 2025–2026 Lamia Kazi-Tani – Portfolio Data Analyst
 </footer>
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+  });
+</script>
 
 </body>
 </html>
