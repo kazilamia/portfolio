@@ -3,33 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lamia Kazi-Tani| Data Analyst</title>
+  <title>Jean Dupont | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Segoe UI', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header { background: #1f2937; color: white; padding: 2rem 1rem; text-align: center; }
-    header h1 { font-size: 2rem; }
-    header p { margin-top: 0.5rem; font-size: 1rem; color: #d1d5db; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    .container { max-width: 960px; margin: auto; padding: 2rem 1rem; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
-    section { margin-bottom: 3rem; }
+    header {
+      background: #111827;
+      color: white;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+      position: relative;
+    }
 
-    h2 { color: #1f2937; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin: 0 auto 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-    .project { background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-    .project h3 { margin-bottom: 0.5rem; }
-    .project p { margin-bottom: 0.5rem; }
-    .project a { color: #2563eb; text-decoration: none; font-weight: bold; }
-    .project a:hover { text-decoration: underline; }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+    }
 
-    .contact ul { list-style: none; }
-    .contact li { margin-bottom: 0.5rem; }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #d1d5db;
+    }
 
-    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #6b7280; }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.5rem; }
+    section {
+      margin-bottom: 3rem;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #111827;
+      border-left: 4px solid #3b82f6;
+      padding-left: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .project {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .project p {
+      margin-bottom: 0.75rem;
+      color: #4b5563;
+    }
+
+    .project a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
     }
 
     .button {
@@ -39,16 +109,52 @@
       color: white;
       border-radius: 8px;
       text-decoration: none;
+      font-weight: 600;
       margin-top: 1rem;
+      transition: background 0.3s;
     }
-    .button:hover { background: #2563eb; }
+
+    .button:hover {
+      background: #2563eb;
+    }
+
+    .contact ul {
+      list-style: none;
+    }
+
+    .contact li {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .project {
+        padding: 1rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Data Analyst</h1>
-    <p>•Lamia Kazi-Tani•</p>
+  <img src="photo-jean.jpg" alt="Photo de Jean Dupont" class="profile-img" />
+  <h1>Jean Dupont – Data Analyst</h1>
   <p>Python • SQL • Power BI • Tableau • Excel • Visualisation de données</p>
 </header>
 
@@ -56,10 +162,8 @@
 
   <section>
     <h2>📄 À propos</h2>
-    <p>Bonjour et bienvenue sur mon GitHub ! <p>
-      <p>Je m’appelle Lamia Kazi-Tani, je me spécialise aujourd’hui dans l’exploration, la transformation et la visualisation de données au service de la performance métier.Forte de plusieurs années d’expérience en analyse de données (logistique, retail, finance), je me spécialise aujourd’hui dans l’exploration, la transformation et la visualisation de données au service de la performance métier.
- Mon objectif : concevoir des solutions data efficaces, claires et exploitables, en combinant outils BI, automatisation, et intelligence artificielle appliquée.</p>
-    <a class="button" href="" target="_blank">📥 Télécharger mon CV</a>
+    <p>Je suis un Data Analyst passionné par l’analyse de données, la visualisation, et l’automatisation avec Python. J’aide les entreprises à prendre des décisions basées sur les données grâce à des rapports clairs, interactifs et pertinents.</p>
+    <a class="button" href="cv-jean-dupont.pdf" target="_blank">📥 Télécharger mon CV</a>
   </section>
 
   <section>
@@ -67,24 +171,23 @@
 
     <div class="project">
       <h3>Analyse des ventes e-commerce</h3>
-      <p>Nettoyage des données, visualisation des KPIs, et dashboard Power BI interactif.</p>
-      <a href="https://github.com/tonpseudo/ecommerce-sales-analysis" target="_blank">Voir sur GitHub</a> | 
+      <p>Nettoyage, analyse et visualisation des données de ventes via Power BI.</p>
+      <a href="https://github.com/tonpseudo/ecommerce-sales-analysis" target="_blank">Voir sur GitHub</a> |
       <a href="https://public.tableau.com/views/dashboard-ventes" target="_blank">Voir le dashboard</a>
     </div>
 
     <div class="project">
       <h3>Exploration de données COVID-19</h3>
-      <p>Projet avec Pandas, Matplotlib, et rapport PDF auto-généré.</p>
+      <p>Exploration avec Pandas et visualisations avec Matplotlib. Rapport PDF généré automatiquement.</p>
       <a href="https://github.com/tonpseudo/covid-data" target="_blank">Voir sur GitHub</a>
     </div>
 
     <div class="project">
       <h3>Analyse RH : prédiction du turnover</h3>
-      <p>Modèle de machine learning + visualisation avec Streamlit.</p>
+      <p>Modèle de machine learning et interface utilisateur via Streamlit.</p>
       <a href="https://github.com/tonpseudo/hr-turnover" target="_blank">Voir sur GitHub</a> |
       <a href="https://hr-turnover.streamlit.app/" target="_blank">Application en ligne</a>
     </div>
-
   </section>
 
   <section class="contact">
@@ -99,7 +202,7 @@
 </div>
 
 <footer>
-  © 2025 Jean Dupont – Portfolio Data Analyst
+  © 2025–2026 Jean Dupont – Portfolio Data Analyst
 </footer>
 
 </body>
