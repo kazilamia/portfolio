@@ -1,6 +1,6 @@
 # Amazon Product Sales – Data Analyst Portfolio 2025
 
-Ce projet présente une analyse complète des ventes de produits Amazon réalisée avec **Power BI**, à partir d’un fichier Google Sheets partagé.
+Ce projet présente une analyse complète des ventes de produits Amazon réalisée avec **Power BI**, à partir de données kaggle: amazon product sales .
 
 ## Objectifs
 - Identifier les produits performants
@@ -10,7 +10,7 @@ Ce projet présente une analyse complète des ventes de produits Amazon réalis�
 ## Contenu
 - `Amazon_Product_Sales.pbix` : tableau de bord interactif Power BI
 - `Rapport_Analyse_Amazon_2025.pdf` : rapport professionnel (PDF)
-- `Data_Link.txt` : lien Google Sheets source
+- `kaggle: amazon product sales` : Cleaned_data.csv
 - Captures d’écran du tableau de bord
 
 ##  Outils utilisés
