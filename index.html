@@ -19,6 +19,19 @@
       line-height: 1.6;
     }
 
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .hero {
       display: flex;
       flex-wrap: wrap;
@@ -93,6 +106,7 @@
       margin-bottom: 2rem;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      animation: fadeUp 1s ease-out forwards;
     }
 
     .project a, .contact a {
@@ -135,22 +149,25 @@
 </head>
 <body>
 
-<section class="hero">
+<!-- Présentation -->
+<section class="hero fade-in">
   <div class="hero-text">
-    <h1>Jean Dupont</h1>
-    <h2>DATA ANALYST</h2>
+    <h1>DATA ANALYST</h1>
+    <h2>Lamia Kazi-Tani</h2>
     <p>Je suis Data Analyst spécialisé en Excel, SQL, Power BI et Python. J’analyse les données pour fournir des insights exploitables, via des tableaux de bord et visualisations interactives.</p>
-    <a href="cv-jean-dupont.pdf" target="_blank" class="button">📥 Télécharger le CV</a>
+    <a href="cv-jean-dupont.pdf" target="_blank" class="button">Télécharger le CV</a>
   </div>
   <div>
     <img src="photo-jean.jpg" alt="Photo de Jean Dupont" class="hero-img" />
   </div>
 </section>
 
+<!-- Contenu principal -->
 <div class="container">
 
-  <section>
-    <h3>📊 Projets</h3>
+  <!-- Projets -->
+  <section class="fade-in" style="animation-delay: 0.3s;">
+    <h3>Projets</h3>
 
     <div class="project">
       <h4>Analyse des ventes e-commerce</h4>
@@ -173,8 +190,9 @@
     </div>
   </section>
 
-  <section class="contact">
-    <h3>📬 Contact</h3>
+  <!-- Contact -->
+  <section class="contact fade-in" style="animation-delay: 0.5s;">
+    <h3>Contact</h3>
     <ul>
       <li><strong>Email :</strong> jean.dupont@email.com</li>
       <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/tonprofil" target="_blank">linkedin.com/in/tonprofil</a></li>
@@ -184,10 +202,10 @@
 
 </div>
 
+<!-- Pied de page -->
 <footer>
-  © 2025–2026 Jean Dupont – Portfolio Data Analyst
+  © 2025–2026 Lamia Kazi-Tani – Portfolio Data Analyst
 </footer>
 
 </body>
 </html>
-
