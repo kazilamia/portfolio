@@ -67,18 +67,21 @@
     }
 
     .hero a.button {
-      background-color: #6366f1;
-      color: white;
-      padding: 0.7rem 1.2rem;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 9999px; /* bouton très arrondi */
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: inline-block;
+}
 
-    .hero a.button:hover {
-      background-color: #4f46e5;
-    }
+.hero a.button:hover {
+  background-color: #4f46e5;
+  transform: scale(1.03);
+}
 
     .hero-img {
       width: 200px;
@@ -199,8 +202,9 @@ body.dark #theme-toggle {
 </head>
 <body>
 <button id="theme-toggle" aria-label="Changer le thème">
-  🌙
+  Changer de mode
 </button>
+
 
 <!-- Présentation -->
 <section class="hero fade-in">
@@ -265,7 +269,7 @@ body.dark #theme-toggle {
 
   toggle.addEventListener("click", () => {
     body.classList.toggle("dark");
-    toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+    toggle.textContent = "Changer de mode";
   });
 </script>
 
