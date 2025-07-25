@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jean Dupont | Data Analyst</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -14,38 +14,65 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
+      background-color: #0f172a;
+      color: #f1f5f9;
       line-height: 1.6;
     }
 
-    header {
-      background: #111827;
-      color: white;
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-      position: relative;
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background-color: #1e293b;
     }
 
-    .profile-img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin: 0 auto 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    .hero-text {
+      max-width: 500px;
+      margin-right: 3rem;
     }
 
-    header h1 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 2.5rem;
       font-weight: 800;
+      color: #3b82f6;
+      margin-bottom: 0.5rem;
     }
 
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-      color: #d1d5db;
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero a.button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .hero a.button:hover {
+      background-color: #2563eb;
+    }
+
+    .hero-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3b82f6;
+      box-shadow: 0 0 0 6px #1e293b;
     }
 
     .container {
@@ -54,68 +81,28 @@
       padding: 2rem 1rem;
     }
 
-    section {
-      margin-bottom: 3rem;
-      animation: fadeIn 0.8s ease-in;
+    h3 {
+      font-size: 1.3rem;
+      color: #60a5fa;
+      margin-bottom: 0.8rem;
     }
 
-    h2 {
-      font-size: 1.5rem;
-      color: #111827;
-      border-left: 4px solid #3b82f6;
-      padding-left: 0.5rem;
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .project {
-      background: white;
+    .project, .contact ul {
+      background: #1e293b;
       padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
-    .project:hover {
-      transform: translateY(-4px);
-    }
-
-    .project h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-
-    .project p {
-      margin-bottom: 0.75rem;
-      color: #4b5563;
-    }
-
-    .project a {
-      color: #2563eb;
+    .project a, .contact a {
+      color: #93c5fd;
       text-decoration: none;
       font-weight: 500;
     }
 
-    .project a:hover {
+    .project a:hover, .contact a:hover {
       text-decoration: underline;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 0.6rem 1rem;
-      background: #3b82f6;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-top: 1rem;
-      transition: background 0.3s;
-    }
-
-    .button:hover {
-      background: #2563eb;
     }
 
     .contact ul {
@@ -124,74 +111,70 @@
 
     .contact li {
       margin-bottom: 0.5rem;
-      font-weight: 500;
     }
 
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: #94a3b8;
     }
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
       }
 
-      .project {
-        padding: 1rem;
+      .hero-text {
+        margin-right: 0;
+        margin-bottom: 2rem;
       }
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <img src="photo-jean.jpg" alt="Photo de Jean Dupont" class="profile-img" />
-  <h1>Jean Dupont – Data Analyst</h1>
-  <p>Python • SQL • Power BI • Tableau • Excel • Visualisation de données</p>
-</header>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Jean Dupont</h1>
+    <h2>DATA ANALYST</h2>
+    <p>Je suis Data Analyst spécialisé en Excel, SQL, Power BI et Python. J’analyse les données pour fournir des insights exploitables, via des tableaux de bord et visualisations interactives.</p>
+    <a href="cv-jean-dupont.pdf" target="_blank" class="button">📥 Télécharger le CV</a>
+  </div>
+  <div>
+    <img src="photo-jean.jpg" alt="Photo de Jean Dupont" class="hero-img" />
+  </div>
+</section>
 
 <div class="container">
 
   <section>
-    <h2>📄 À propos</h2>
-    <p>Je suis un Data Analyst passionné par l’analyse de données, la visualisation, et l’automatisation avec Python. J’aide les entreprises à prendre des décisions basées sur les données grâce à des rapports clairs, interactifs et pertinents.</p>
-    <a class="button" href="cv-jean-dupont.pdf" target="_blank">📥 Télécharger mon CV</a>
-  </section>
-
-  <section>
-    <h2>📊 Projets</h2>
+    <h3>📊 Projets</h3>
 
     <div class="project">
-      <h3>Analyse des ventes e-commerce</h3>
-      <p>Nettoyage, analyse et visualisation des données de ventes via Power BI.</p>
+      <h4>Analyse des ventes e-commerce</h4>
+      <p>Nettoyage, KPIs, dashboard interactif Power BI.</p>
       <a href="https://github.com/tonpseudo/ecommerce-sales-analysis" target="_blank">Voir sur GitHub</a> |
-      <a href="https://public.tableau.com/views/dashboard-ventes" target="_blank">Voir le dashboard</a>
+      <a href="https://public.tableau.com/views/dashboard-ventes" target="_blank">Dashboard</a>
     </div>
 
     <div class="project">
-      <h3>Exploration de données COVID-19</h3>
-      <p>Exploration avec Pandas et visualisations avec Matplotlib. Rapport PDF généré automatiquement.</p>
+      <h4>Exploration de données COVID-19</h4>
+      <p>Analyse avec Pandas, Matplotlib et génération de rapport PDF automatisé.</p>
       <a href="https://github.com/tonpseudo/covid-data" target="_blank">Voir sur GitHub</a>
     </div>
 
     <div class="project">
-      <h3>Analyse RH : prédiction du turnover</h3>
-      <p>Modèle de machine learning et interface utilisateur via Streamlit.</p>
+      <h4>Prédiction du turnover RH</h4>
+      <p>Machine learning et visualisation via Streamlit.</p>
       <a href="https://github.com/tonpseudo/hr-turnover" target="_blank">Voir sur GitHub</a> |
       <a href="https://hr-turnover.streamlit.app/" target="_blank">Application en ligne</a>
     </div>
   </section>
 
   <section class="contact">
-    <h2>📬 Contact</h2>
+    <h3>📬 Contact</h3>
     <ul>
       <li><strong>Email :</strong> jean.dupont@email.com</li>
       <li><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/tonprofil" target="_blank">linkedin.com/in/tonprofil</a></li>
@@ -207,3 +190,4 @@
 
 </body>
 </html>
+
