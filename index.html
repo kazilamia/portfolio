@@ -208,8 +208,9 @@ body.dark #theme-toggle {
 </head>
 <body>
 <button id="theme-toggle" aria-label="Changer le thème">
-  Changer de mode
+  🌙
 </button>
+
 
 
 <!-- Présentation -->
@@ -278,9 +279,10 @@ Data Analyst Power BI</p>
 
   toggle.addEventListener("click", () => {
     body.classList.toggle("dark");
-    toggle.textContent = "Changer de mode";
+    toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
   });
 </script>
+
 
 </body>
 </html>
