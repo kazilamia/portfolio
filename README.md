@@ -34,7 +34,6 @@ Vous y trouverez deux projets complets basés sur des données réelles (Kaggle 
 - DAX (colonnes calculées)
 - GitHub Pages (hébergement)
 
-[---](https://github.com/kazilamia/portfolio/blob/main/Performance%20des%20Campagnes%20Marketing%20%26%20Comportement%20Client/Campagne%20Marketing.pbix)
 
 ##  À propos
 
