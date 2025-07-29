@@ -1,4 +1,4 @@
-# Portfolio – Data Analyst 2025 – 
+# Portfolio – Data Analyst 2025 –[Voir →] (https://kazilamia.github.io/portfolio/)
 
 Bienvenue sur mon portfolio de projets en data analyse, conçu avec Power BI.  
 Vous y trouverez deux projets complets basés sur des données réelles (Kaggle et entreprise fictive) : tableaux de bord interactifs, analyses visuelles, rapports PDF et recommandations stratégiques.
