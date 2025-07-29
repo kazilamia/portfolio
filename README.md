@@ -7,7 +7,7 @@ Vous y trouverez deux projets complets basés sur des données réelles (Kaggle 
 
 ## Projets inclus
 
-### 1. [Amazon Product Sales](https://github.com/kazilamia/portfolio/blob/main/Amazon-Product-Sales/Amazon%20Product%20Sales.pbix)
+### 1. Amazon Product Sales
 > Analyse de ventes e-commerce issues d’un dataset Kaggle.  
 > Tableau de bord Power BI, KPIs, corrélation prix/avis, top ventes, catégorisation.
 
@@ -17,7 +17,7 @@ Vous y trouverez deux projets complets basés sur des données réelles (Kaggle 
 
 ---
 
-### 2. [Campagnes Marketing & Fidélisation](https://github.com/kazilamia/portfolio/blob/main/Performance%20des%20Campagnes%20Marketing%20%26%20Comportement%20Client/Campagne%20Marketing.pbix)
+### 2. Campagnes Marketing & Fidélisation
 > Étude de la performance de 5 campagnes marketing auprès de clients segmentés.  
 > Analyse de la fidélisation, des profils socio-éco, et recommandations.
 
@@ -27,21 +27,23 @@ Vous y trouverez deux projets complets basés sur des données réelles (Kaggle 
 
 ---
 
-## 🛠️ Outils utilisés
+## Outils utilisés
 
 - Power BI Desktop
 - Power Query (nettoyage/transformation)
 - DAX (colonnes calculées)
 - GitHub Pages (hébergement)
 
----
+[---](https://github.com/kazilamia/portfolio/blob/main/Performance%20des%20Campagnes%20Marketing%20%26%20Comportement%20Client/Campagne%20Marketing.pbix)
 
-## 👨‍💻 À propos
+##  À propos
 
 Je suis Lamia Kazi-Tani, passionnée par la data et les outils de visualisation.  
 Ce portfolio illustre mes compétences en analyse, storytelling visuel et recommandation stratégique.
 
+---
 📫 Contact : lamiakazitani5@gmail.com 
+
 💼 LinkedIn : lhttps://www.linkedin.com/in/lamia-kazi-tani/
 
 ---
